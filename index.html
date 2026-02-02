@@ -1,193 +1,136 @@
 <!DOCTYPE html>
-<html b:version='2'class='v2'expr:dir='data:blog.languageDirection'xmlns='http://www.w3.org/1999/xhtml'xmlns:b='http://www.google.com/2005/gml/b'xmlns:data='http://www.google.com/2005/gml/data'xmlns:expr='http://www.google.com/2005/gml/expr'>
+<html lang='my'>
 <head>
-
-
-<title>ဖောင်ဒိုင်းအောကားများ</title>
-<meta charset='utf-8'/>
-<meta content='width=device-width, initial-scale=1'name='viewport'/>
-<b:include data='blog'name='all-head-content'/>
-<b:skin version='1.0.0'><![CDATA[/*]]></b:skin>
-	<style type="text/css">
-		.main {
-			display: flex;
-			
-			align-items: center;
-			justify-content: center;
-			height: 100%
-		}
-
-		body {
-			margin: 0;
-			background-color: #292929;
-		}
-	</style>
+    <title>ဖောင်ဒိုင်းအောကားများ | Official Portal</title>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
     
-    <style>
-    .button {
+    <link href='https://cdn.jsdelivr.net/gh/thantthet/pyidaungsu-webfont@master/Pyidaungsu.css' rel='stylesheet'/>
     
-  background-color: #FFB114;
-  border: 3px ridge #fdf5e6;
-   border-radius: 5px;
-  width: 70%;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 10px;
-  cursor: pointer;
-}
-</style>
+    <style type='text/css'>
+        /* Strict Font Application */
+        * {
+            font-family: 'Pyidaungsu', serif !important;
+        }
 
-	
-	
+        :root {
+            --primary-gold: #FFB114;
+            --bg-dark: #0f0f0f;
+            --card-bg: #1e1e1e;
+            --text-light: #f4f4f4;
+            --warning-red: #ff5252;
+        }
 
-	
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
 
-	
+        .header {
+            padding: 50px 20px;
+            text-align: center;
+            background: radial-gradient(circle at center, #2c2c2c 0%, #0f0f0f 100%);
+            border-bottom: 1px solid #333;
+        }
 
-	
+        .header h1 {
+            font-size: 2.4rem;
+            margin: 0;
+            color: var(--primary-gold);
+            text-shadow: 0 2px 10px rgba(255, 177, 20, 0.3);
+            font-weight: 400;
+        }
 
-	<style>
-    .buttondwn {
-  background-image: url('https://1.bp.blogspot.com/-NalbS0KOIm4/YP5j6x8gqzI/AAAAAAAAWME/nVlIT3CU12E3WUZ4XlcgY7UAmufsHrMRACLcBGAsYHQ/s578/Get%2Bit%2Bon%2BGoogle%2BPlay.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 150px;
-  height:50px;
-  display: inline-block;
-  font-size: 16px;
- 
-  
-}
-</style>
+        /* VPN Warning Alert */
+        .vpn-alert {
+            max-width: 700px;
+            margin: 25px auto 0 auto;
+            background-color: rgba(255, 82, 82, 0.1);
+            border: 1.5px solid var(--warning-red);
+            padding: 15px 20px;
+            border-radius: 12px;
+            color: var(--warning-red);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
 
-	
+        /* Menu Grid */
+        .menu-grid {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            width: 100%;
+            box-sizing: border-box;
+        }
 
-	
+        .nav-card {
+            background: var(--card-bg);
+            border: 1px solid #333;
+            border-radius: 14px;
+            padding: 22px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-light);
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            display: block;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
 
-	
+        .nav-card:hover {
+            border-color: var(--primary-gold);
+            color: var(--primary-gold);
+            transform: translateY(-3px);
+            background: #252525;
+            box-shadow: 0 8px 20px rgba(255, 177, 20, 0.15);
+        }
 
-	
+        footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+            font-size: 0.85rem;
+            border-top: 1px solid #222;
+        }
 
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-
+        @media (max-width: 600px) {
+            .header h1 { font-size: 1.8rem; }
+            .nav-card { padding: 18px; font-size: 1.05rem; }
+            .header { padding: 35px 15px; }
+        }
+    </style>
 </head>
 <body>
-<b:section class='header' id='header' showaddelement='yes'>
-  <b:widget id='Header1' title='Main heading' type='Header'></b:widget>
-  
-  <div class="main">
-     <div>
-  	 
-  	  <p style="text-align: center;">
-      
-      		<a href="https://myanmar788.github.io/mmapykrsites/" class="button">မြန်မာအောကားများ</a>
-            <a href="https://myanmar788.github.io/nainangkyarakarmya/" class="button">နိုင်ငံခြားအောကားများ</a>
-            <a href="https://jav.founddie.com/" class="button">ဂျပန်အောကားများ</a>
-            <a href="https://msub.founddie.com/" class="button">မြန်မာစာတန်းထိုးအောကားများ</a>
-            <a href="https://myanmar788.github.io/teek/" class="button">Tik Tok ၁၈ + အောကားများ</a>
-           
-		  
-		  <div style="text-align: center;
-                background-color:#f44336);">
-		 <p style="color: white;">အော app နှင့် website များကို မြန်မာနိုင်ငံတွင်ပိတ်ထားပါသဖြင့် VPN ဖွင့်သုံးပေးရပါမည်။ VPN ဖွင့်မထားပါက ဗီဒီယိုများ မပေါ်ပါ။</p>
-	</div>
-     
-	<!--
-	<div style="text-align: center;
-                background-color:rgb(53, 51, 51);">
-		
-	
-    
-	</div>
-	
-<p> အော app နှင့် website များကို မြန်မာနိုင်ငံတွင်ပိတ်ထားပါသဖြင့် VPN ဖွင့်သုံးပေးရပါမည်။ VPN ဖွင့်မထားပါက ဗီဒီယိုများ မပေါ်ပါ။</p>
-	
-	
-<div id="btnContainer" 
 
- class="center"
+    <div class='header'>
+        <h1>ဖောင်ဒိုင်းအောကားများ</h1>
+        
+        <div class='vpn-alert'>
+            အော app နှင့် website များကို မြန်မာနိုင်ငံတွင်ပိတ်ထားပါသဖြင့် VPN ဖွင့်သုံးပေးရပါမည်။ VPN ဖွင့်မထားပါက ဗီဒီယိုများ မပေါ်ပါ။
+        </div>
+    </div>
 
- style="text-align: center;" 
+    <div class='menu-grid'>
+        <a class='nav-card' href='https://myanmar788.github.io/mmapykrsites/'>မြန်မာအောကားများ</a>
+        <a class='nav-card' href='https://myanmar788.github.io/nainangkyarakarmya/'>နိုင်ငံခြားအောကားများ</a>
+        <a class='nav-card' href='https://jav.founddie.com/'>ဂျပန်အောကားများ</a>
+        <a class='nav-card' href='https://msub.founddie.com/'>မြန်မာစာတန်းထိုးအောကားများ</a>
+        <a class='nav-card' href='https://myanmar788.github.io/teek/'>Tik Tok ၁၈ + အောကားများ</a>
+    </div>
 
- style="background-color:f7971d; 
+    <footer>
+        &copy; 2026 ဖောင်ဒိုင်းအောကားများ | Official Portal
+    </footer>
 
- color:black; width:150px; height:30px;">
-
-<img 
-
-  loading="lazy" display: inline-block;
-
-		src="https://blogger.googleusercontent.com/img/a/AVvXsEh0AaH8Xi1T3B7v8Xk9kj7gSF579MiqwUtjjBA6qh04RtAWMDwOMQpShNoib-cvYASfoHjcg22wUMvkyAm25PhSTEIlxzrUMn1IoyjfIo7otDM1ETJPnMqADnqOLDmXTPZuE7V71JSSAnAHlyUE3JdKfHxFT9SWA7f5meR9o2grby9pRwpY3eHHsLHG=s518" 		width="100px" height="100px"> 
-
-  
-
-  <a href="https://play.google.com/store/apps/details?id=com.apyarmyanmar.fullcarassun"
-
-	class="buttondwn"></a> 
-
-</div>
-	
--->
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-		
-
-</div>
-	
-	
-   </div>
-  </div>
-</b:section>
 </body>
 </html>
